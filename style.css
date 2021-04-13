@@ -1,0 +1,177 @@
+/*
+
+Theme name: soccer home
+version: 1.0.0
+Author: Fortune Mathonsi and Clerence Mathonsi
+Description: Soccer Home is the home of football, contains all the glorious moments for football lovers.
+
+*/
+
+body{
+
+    background:rgb(68, 67, 67);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.content {
+    max-width: 950px;
+    max-height: 3000px;
+    margin: auto;
+    background: rgb(241, 243, 245);
+    padding: 20px;
+    padding-top: 30px;
+  }
+.left-content {
+
+  position: relative;
+  width: 600px;
+
+}
+
+/* Left column */
+.content .right-content {
+  float: right;
+  width: 25%;
+  padding-top: 0%;
+}
+.container{
+
+padding-bottom: 30px;
+
+}
+.container .title{
+
+    padding-top: 30px;
+
+}
+
+header .navigation{
+
+    background-color: blue;
+    width: 101%;
+}
+/* Card style */
+.cardheading{
+
+  position: relative;
+  top: 20px;
+  background-color: black;
+
+}
+.large-card{
+
+    position: relative;
+    top: 30px;
+
+}
+.large-card-right{
+
+    padding-top: 20px;
+
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+
+.cards * {
+  box-sizing: border-box;
+}
+
+.card__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.card__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555555;
+  background: #eeeeee;
+  font-size: 0.8em;
+  border-bottom: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__info i {
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+.card__link {
+  color: #64968c;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: blue;
+  margin-top: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
